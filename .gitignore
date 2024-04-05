@@ -11,4 +11,6 @@ dist
 *.c
 __bootstrap__.*
 venv/
+.venv/
+
 
