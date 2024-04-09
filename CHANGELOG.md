@@ -1,6 +1,7 @@
 # v1.6
 
-* _TBA_
+* certified for Python 3.11 and 3.12
+* CI moved to GitHub Actions
 
 # v1.5
 

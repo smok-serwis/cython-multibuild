@@ -1,0 +1,22 @@
+name: CI
+run-name: ${{ github.actor }}
+on: [ push ]
+jobs:
+  tests:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        python-version: [ "3.5", "3.6", "3.7", "3.8", "3.9", "3.10", "3.11", "3.12" ]
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-python@main
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install everything
+        run: |
+          pip install -U pip setuptools wheel disttools packaging pyproject.toml
+      - name: Test
+        run: python setup.py test
+        env:
+          DEBUG: "1""
