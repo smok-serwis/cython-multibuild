@@ -11,7 +11,8 @@ snakehouse
 [![License](https://img.shields.io/pypi/l/snakehouse)](https://github.com/smok-serwis/snakehouse)
 
 snakehouse is a tool to pack mutiple .pyx files
-into a single extension.
+into a single extension so that they are importable as separate
+Python modules inside Python.
 
 Inspired by [this StackOverflow discussion](https://stackoverflow.com/questions/30157363/collapse-multiple-submodules-to-one-cython-extension).
 
