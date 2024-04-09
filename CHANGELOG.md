@@ -2,6 +2,7 @@
 
 * certified for Python 3.11 and 3.12
 * CI moved to GitHub Actions
+* downgraded Mako, since newer Mako requires Python 3.8
 
 # v1.5
 

@@ -1,3 +1,3 @@
 Cython
-mako
-satella>=2.14.46
+mako==1.1.0
+satella
