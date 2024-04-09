@@ -1,4 +1,4 @@
 Cython
 mako==1.1.0
-satella
+satella==2.20.0
 MarkupSafe==1.1.1
