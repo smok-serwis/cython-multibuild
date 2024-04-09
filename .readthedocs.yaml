@@ -5,8 +5,6 @@ build:
     python: "3.9"
 python:
   install:
-    - Cython
-    - mako
-    - satella
+    - requirements: requirements.txt
 sphinx:
   configuration: docs/conf.py
