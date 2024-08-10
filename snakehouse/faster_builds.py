@@ -14,6 +14,7 @@ def monkey_patch_parallel_compilation(cores: tp.Optional[int] = None) -> None:
 
     :param cores: amount of cores. Leave at default (None) for autodetection.
     """
+    multiprocessing.freeze_support()
     if sys.platform == 'win32':
         print('Sorry, parallel builds are not supported on Windows')
         return
