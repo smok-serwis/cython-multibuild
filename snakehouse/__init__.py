@@ -7,4 +7,4 @@ from .requirements import read_requirements_txt, find_c, find_pyx_and_c, find_py
 try:
     __version__ = pkg_resources.require('snakehouse')[0].version
 except pkg_resources.DistributionNotFound:
-    __version__ = '1.7a1'
+    __version__ = '1.7'

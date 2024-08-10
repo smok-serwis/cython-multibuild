@@ -1,5 +1,6 @@
 import multiprocessing
 import typing as tp
+import sys
 
 __all__ = ['monkey_patch_parallel_compilation']
 
@@ -13,6 +14,10 @@ def monkey_patch_parallel_compilation(cores: tp.Optional[int] = None) -> None:
 
     :param cores: amount of cores. Leave at default (None) for autodetection.
     """
+    if sys.platform == 'win32':
+        print('Sorry, parallel builds are not supported on Windows')
+        return
+
     if cores is None:
         cores = multiprocessing.cpu_count()
 
