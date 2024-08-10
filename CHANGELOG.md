@@ -1,3 +1,7 @@
+# v1.7
+
+* should work on Windows
+
 # v1.6
 
 * certified for Python 3.11 and 3.12
