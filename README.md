@@ -10,6 +10,14 @@ snakehouse
 [![Documentation Status](https://readthedocs.org/projects/snakehouse/badge/?version=latest)](http://snakehouse.readthedocs.io/en/latest/?badge=latest)
 [![License](https://img.shields.io/pypi/l/snakehouse)](https://github.com/smok-serwis/snakehouse)
 
+**IMPORTANT!**
+
+Since for now we've lost our PyPI access, please install the packages in a following way:
+
+```
+pip install git+https://github.com/smok-serwis/snakehouse.git
+```
+
 snakehouse is a tool to pack mutiple .pyx files
 into a single extension so that they are importable as separate
 Python modules inside Python.

@@ -1,6 +1,6 @@
 # v1.7
 
-* should work on Windows
+* should work on Windows now
 
 # v1.6
 
