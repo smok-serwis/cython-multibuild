@@ -16,7 +16,7 @@ def build(extensions: tp.List[MultiBuildType], *args, nthreads=None, **kwargs):
         nthreads = multiprocessing.cpu_count()
     if sys.platform == 'win32':
         print('Sorry, multiprocessing is not yet supported on Windows')
-        nthreads = 1
+        nthreads = 0
     kwargs['nthreads'] = nthreads
     returns = []
     multi_builds = []
